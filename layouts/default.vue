@@ -24,7 +24,7 @@
 		</v-app-bar>
 
 		<v-main>
-			<v-container>
+			<v-container fill-height>
 				<nuxt />
 			</v-container>
 		</v-main>
@@ -58,7 +58,7 @@
 				items: [
 					{
 						icon: 'mdi-apps',
-						title: 'Home',
+						title: 'Início',
 						to: '/',
 					},
 					{
