@@ -1,6 +1,12 @@
 <template>
 	<v-app>
-		<v-navigation-drawer v-model="drawer" fixed temporary disable-resize-watcher>
+		<v-navigation-drawer
+			v-if="$vuetify.breakpoint.mdAndDown"
+			v-model="drawer"
+			fixed
+			temporary
+			disable-resize-watcher
+		>
 			<v-list-item>
 				<v-list-item-content>
 					<v-list-item-title class="nav-drawer__title"> Menu </v-list-item-title>
@@ -22,10 +28,13 @@
 		</v-navigation-drawer>
 
 		<v-app-bar fixed app elevate-on-scroll>
-			<v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+			<v-app-bar-nav-icon
+				v-if="$vuetify.breakpoint.mdAndDown"
+				@click.stop="drawer = !drawer"
+			/>
 			<v-toolbar-title v-text="title" />
 			<v-spacer />
-			<v-row no-gutters>
+			<v-row v-if="$vuetify.breakpoint.lgAndUp" no-gutters>
 				<v-col v-for="(item, i) in items" :key="i">
 					<v-btn color="#daa520" width="180px" elevation="3" raised :to="item.to" exact>
 						<v-icon class="icon--absolute">{{ item.icon }}</v-icon>
@@ -33,7 +42,7 @@
 					</v-btn>
 				</v-col>
 			</v-row>
-			<v-spacer />
+			<v-spacer v-if="$vuetify.breakpoint.lgAndUp" />
 			<v-btn icon @click.stop="$vuetify.theme.dark = !$vuetify.theme.dark">
 				<v-icon>mdi-theme-light-dark</v-icon>
 			</v-btn>
@@ -112,22 +121,5 @@
 			position: absolute;
 			left: 0px;
 		}
-	}
-
-	/* Bootstrap 4 Media Queries */
-	/* Small devices (landscape phones, 576px and up) */
-	@media (min-width: 576px) {
-	}
-
-	/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-	@media (min-width: 768px) {
-	}
-
-	/* Large devices (desktops, 992px and up) */
-	@media (min-width: 992px) {
-	}
-
-	/* Extra large devices (large desktops, 1200px and up) */
-	@media (min-width: 1200px) {
 	}
 </style>
