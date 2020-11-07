@@ -13,3 +13,9 @@
 		</v-col>
 	</v-row>
 </template>
+
+<script>
+	export default {
+		layout: (ctx) => (ctx.isMobile ? 'mobile' : 'default'),
+	}
+</script>
