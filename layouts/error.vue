@@ -7,7 +7,7 @@
 			<h1 v-else>
 				{{ otherError }}
 			</h1>
-			<v-btn class="mt-10" elevation="6" large to="/" nuxt>Início</v-btn>
+			<v-btn class="mt-10" elevation="3" large to="/" nuxt>Início</v-btn>
 		</v-col>
 	</v-row>
 </template>

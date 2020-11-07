@@ -1,9 +1,9 @@
 <template>
 	<v-app>
-		<v-navigation-drawer v-model="drawer" absolute temporary disable-resize-watcher>
+		<v-navigation-drawer v-model="drawer" fixed app temporary disable-resize-watcher>
 			<v-list-item>
 				<v-list-item-content>
-					<v-list-item-title class="navigation-title"> Menu </v-list-item-title>
+					<v-list-item-title class="nav-drawer__title"> Menu </v-list-item-title>
 				</v-list-item-content>
 			</v-list-item>
 
@@ -21,7 +21,7 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-app-bar fixed app>
+		<v-app-bar fixed elevate-on-scroll>
 			<v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 			<v-spacer />
 			<v-toolbar-title v-text="title" />
@@ -37,19 +37,19 @@
 			</v-container>
 		</v-main>
 
-		<v-footer :absolute="true" app>
+		<v-footer absolute app>
 			<span>&copy; {{ new Date().getFullYear() }}</span>
 			<v-spacer />
-			<v-btn class="mx-2" elevation="6" icon>
+			<v-btn class="mx-2" elevation="3" icon>
 				<v-icon>mdi-phone</v-icon>
 			</v-btn>
-			<v-btn class="mx-2" elevation="6" icon>
+			<v-btn class="mx-2" elevation="3" icon>
 				<v-icon>mdi-whatsapp</v-icon>
 			</v-btn>
-			<v-btn class="mx-2" elevation="6" icon>
+			<v-btn class="mx-2" elevation="3" icon>
 				<v-icon>mdi-facebook</v-icon>
 			</v-btn>
-			<v-btn class="mx-2" elevation="6" icon>
+			<v-btn class="mx-2" elevation="3" icon>
 				<v-icon>mdi-instagram</v-icon>
 			</v-btn>
 		</v-footer>
@@ -76,7 +76,7 @@
 					},
 					{
 						icon: 'mdi-gavel',
-						title: 'Áreas de Atuação',
+						title: 'Atuação',
 						to: '/areas',
 					},
 					{
@@ -91,9 +91,11 @@
 </script>
 
 <style lang="scss" scoped>
-	.navigation-title {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
+	.nav-drawer {
+		&__title {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 </style>
