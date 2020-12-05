@@ -34,10 +34,10 @@
 <script>
 	import LawyerCards from '~/components/LawyerCards.vue'
 	export default {
-		layout: (ctx) => (ctx.isMobile ? 'mobile' : 'default'),
 		components: {
 			LawyerCards,
 		},
+		layout: (ctx) => (ctx.isMobile ? 'mobile' : 'default'),
 		data() {
 			return {
 				slides: [

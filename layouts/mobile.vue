@@ -40,16 +40,16 @@
 		<v-footer absolute app>
 			<span>&copy; {{ new Date().getFullYear() }}</span>
 			<v-spacer />
-			<v-btn class="mx-2" elevation="3" icon>
+			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
 				<v-icon>mdi-phone</v-icon>
 			</v-btn>
-			<v-btn class="mx-2" elevation="3" icon>
+			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
 				<v-icon>mdi-whatsapp</v-icon>
 			</v-btn>
-			<v-btn class="mx-2" elevation="3" icon>
+			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
 				<v-icon>mdi-facebook</v-icon>
 			</v-btn>
-			<v-btn class="mx-2" elevation="3" icon>
+			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
 				<v-icon>mdi-instagram</v-icon>
 			</v-btn>
 		</v-footer>

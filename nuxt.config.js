@@ -9,8 +9,8 @@ export default {
 
 	// Global page headers (https://go.nuxtjs.dev/config-head)
 	head: {
-		titleTemplate: '%s - calil-fonseca',
-		title: 'calil-fonseca',
+		titleTemplate: '%s - Calil Fonseca',
+		title: 'Calil Fonseca',
 		meta: [
 			{ charset: 'utf-8' },
 			{
@@ -64,13 +64,20 @@ export default {
 			dark: true,
 			themes: {
 				dark: {
-					primary: colors.blue.darken2,
-					accent: colors.grey.darken3,
-					secondary: colors.amber.darken3,
-					info: colors.teal.lighten1,
-					warning: colors.amber.base,
-					error: colors.deepOrange.accent4,
+					secondary: '#084d6e', // Azul Petróleo
+
+					error: colors.red.accent3,
+					info: colors.blue.base,
 					success: colors.green.accent3,
+					warning: colors.amber.base,
+				},
+				light: {
+					secondary: '#084d6e', // Azul Petróleo
+
+					error: colors.red.darken2,
+					info: colors.blue.accent4,
+					success: colors.green.accent3,
+					warning: colors.amber.base,
 				},
 			},
 		},
