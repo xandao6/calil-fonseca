@@ -77,7 +77,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Calil Fonseca',
+				title: 'Ricardo Calil & Advogados Associados',
 				dark: true,
 				drawer: false,
 				items: [
@@ -113,10 +113,6 @@
 </script>
 
 <style lang="scss" scoped>
-	.theme--light.v-btn.v-btn--icon {
-		//color: white;
-	}
-
 	.nav-drawer {
 		&__title {
 			position: absolute;

@@ -7,7 +7,7 @@
 					<div class="text-center"></div>
 					<v-card elevation="10">
 						<v-card-title class="headline">
-							Calil Fonseca & Advogados Associados
+							Ricardo Calil & Advogados Associados
 						</v-card-title>
 						<v-card-text>
 							<p>Seja bem-vindo ao nosso escritório!</p>

@@ -60,7 +60,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Calil Fonseca',
+				title: 'Ricardo Calil & Advogados Associados',
 				dark: true,
 				drawer: false,
 				items: [

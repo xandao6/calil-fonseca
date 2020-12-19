@@ -20,18 +20,16 @@
 		data: () => ({
 			lawyers: [
 				{
-					color: '#1F7087',
 					src: '/ricardo.png',
 					name: 'Dr. Ricardo Calil',
-					oab: '00000',
+					oab: '12.120',
 					summary:
 						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit quam, posuere dignissim consectetur et, interdum hendrerit quam. Suspendisse non leo sed dolor aliquam aliquam. Fusce in volutpat nulla. Nulla ultrices egestas auctor. Donec tempus et metus ut porta. Nunc elementum turpis eget varius lobortis.',
 				},
 				{
-					color: '#996515',
 					src: '/lucilo.png',
 					name: 'Dr. Lucilo Neto',
-					oab: '00000',
+					oab: '47.557',
 					summary:
 						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit quam, posuere dignissim consectetur et, interdum hendrerit quam. Suspendisse non leo sed dolor aliquam aliquam. Fusce in volutpat nulla. Nulla ultrices egestas auctor. Donec tempus et metus ut porta. Nunc elementum turpis eget varius lobortis.',
 				},

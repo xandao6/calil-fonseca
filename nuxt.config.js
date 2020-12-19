@@ -9,8 +9,8 @@ export default {
 
 	// Global page headers (https://go.nuxtjs.dev/config-head)
 	head: {
-		titleTemplate: '%s - Calil Fonseca',
-		title: 'Calil Fonseca',
+		titleTemplate: '%s',
+		title: 'Ricardo Calil',
 		meta: [
 			{ charset: 'utf-8' },
 			{
