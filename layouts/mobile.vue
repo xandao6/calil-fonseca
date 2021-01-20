@@ -24,7 +24,10 @@
 		<v-app-bar fixed elevate-on-scroll>
 			<v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 			<v-spacer />
-			<v-toolbar-title v-text="title" />
+
+			<company-logo class="logo--margin" :width="40" />
+			<company-text-logo :width="170" />
+
 			<v-spacer />
 			<v-btn icon @click.stop="$vuetify.theme.dark = !$vuetify.theme.dark">
 				<v-icon>mdi-theme-light-dark</v-icon>
@@ -57,10 +60,15 @@
 </template>
 
 <script>
+	import CompanyLogo from '~/components/CompanyLogo.vue'
+	import CompanyTextLogo from '~/components/CompanyTextLogo.vue'
 	export default {
+		components: {
+			CompanyLogo,
+			CompanyTextLogo,
+		},
 		data() {
 			return {
-				title: 'Ricardo Calil & Advogados Associados',
 				dark: true,
 				drawer: false,
 				items: [
@@ -96,6 +104,12 @@
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
+		}
+	}
+
+	.logo {
+		&--margin {
+			margin-right: 15px;
 		}
 	}
 </style>

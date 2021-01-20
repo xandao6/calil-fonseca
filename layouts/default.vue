@@ -32,17 +32,21 @@
 				v-if="$vuetify.breakpoint.mdAndDown"
 				@click.stop="drawer = !drawer"
 			/>
-			<v-toolbar-title v-text="title" />
+			<v-spacer v-if="$vuetify.breakpoint.mdAndDown" />
+
+			<company-logo class="logo--margin" :width="50" />
+			<company-text-logo :width="200" />
+
 			<v-spacer />
 			<v-row v-if="$vuetify.breakpoint.lgAndUp" no-gutters>
 				<v-col v-for="(item, i) in items" :key="i">
 					<v-btn width="180px" elevation="3" raised :to="item.to" class="secondary" exact>
-						<!--v-icon class="icon--absolute">{{ item.icon }}</v-icon-->
 						{{ item.title }}
 					</v-btn>
 				</v-col>
 			</v-row>
 			<v-spacer v-if="$vuetify.breakpoint.lgAndUp" />
+
 			<v-btn icon @click.stop="toggleTheme">
 				<v-icon>mdi-theme-light-dark</v-icon>
 			</v-btn>
@@ -74,10 +78,15 @@
 </template>
 
 <script>
+	import CompanyLogo from '~/components/CompanyLogo.vue'
+	import CompanyTextLogo from '~/components/CompanyTextLogo.vue'
 	export default {
+		components: {
+			CompanyLogo,
+			CompanyTextLogo,
+		},
 		data() {
 			return {
-				title: 'Ricardo Calil & Advogados Associados',
 				dark: true,
 				drawer: false,
 				items: [
@@ -121,10 +130,9 @@
 		}
 	}
 
-	.icon {
-		&--absolute {
-			position: absolute;
-			left: 0px;
+	.logo {
+		&--margin {
+			margin-right: 15px;
 		}
 	}
 </style>
