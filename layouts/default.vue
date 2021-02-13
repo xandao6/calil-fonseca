@@ -61,19 +61,75 @@
 		<v-footer absolute app>
 			<span>&copy; {{ new Date().getFullYear() }}</span>
 			<v-spacer />
-			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
+			<v-btn
+				:href="'tel:' + social.phone"
+				rel="noopener noreferrer"
+				class="mx-2 secondary white--text"
+				elevation="3"
+				icon
+			>
 				<v-icon>mdi-phone</v-icon>
 			</v-btn>
-			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
+			<v-btn
+				:href="
+					'https://wa.me/' +
+					social.whatsapp +
+					'?text=Ol%C3%A1%2C%20como%20vai%3F%20Peguei%20seu%20contato%20atrav%C3%A9s%20do%20site.'
+				"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mx-2 secondary white--text"
+				elevation="3"
+				icon
+			>
 				<v-icon>mdi-whatsapp</v-icon>
 			</v-btn>
-			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
+			<v-btn
+				:href="'https://www.facebook.com/' + social.facebook"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mx-2 secondary white--text"
+				elevation="3"
+				icon
+			>
 				<v-icon>mdi-facebook</v-icon>
 			</v-btn>
-			<v-btn class="mx-2 secondary white--text" elevation="3" icon>
+			<v-btn
+				:href="'https://instagram.com/' + social.instagram"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mx-2 secondary white--text"
+				elevation="3"
+				icon
+			>
 				<v-icon>mdi-instagram</v-icon>
 			</v-btn>
+			<v-btn
+				:href="'mailto:' + social.email"
+				rel="noopener noreferrer"
+				class="mx-2 secondary white--text"
+				elevation="3"
+				icon
+			>
+				<v-icon>mdi-email</v-icon>
+			</v-btn>
 		</v-footer>
+
+		<v-fab-transition>
+			<v-btn
+				:href="
+					'https://wa.me/' +
+					social.whatsapp +
+					'?text=Ol%C3%A1%2C%20como%20vai%3F%20Peguei%20seu%20contato%20atrav%C3%A9s%20do%20site.'
+				"
+				target="_blank"
+				rel="noopener noreferrer"
+				fab
+				class="v-btn--absolute"
+			>
+				<v-icon x-large color="green">mdi-whatsapp</v-icon>
+			</v-btn>
+		</v-fab-transition>
 	</v-app>
 </template>
 
@@ -111,6 +167,13 @@
 						to: '/contato',
 					},
 				],
+				social: {
+					whatsapp: '556233752216',
+					facebook: 'ricardocaliladv',
+					instagram: 'dr.ricardocalil',
+					phone: '+55 62 3375-2216',
+					email: 'ricardocalil@hotmail.com',
+				},
 			}
 		},
 		methods: {
@@ -133,6 +196,16 @@
 	.logo {
 		&--margin {
 			margin-right: 15px;
+		}
+	}
+
+	.v-btn {
+		&--absolute {
+			position: fixed;
+			bottom: 0px;
+			left: 0px;
+			margin: 0px 0px 24px 24px;
+			z-index: 1000;
 		}
 	}
 </style>
