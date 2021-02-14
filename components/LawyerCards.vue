@@ -34,8 +34,7 @@
 					src: '/lawyers/ricardo_com_fundo.png',
 					name: 'Dr. Ricardo Calil',
 					oab: '12.120',
-					summary:
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit quam, posuere dignissim consectetur et, interdum hendrerit quam. Suspendisse non leo sed dolor aliquam aliquam. Fusce in volutpat nulla. Nulla ultrices egestas auctor. Donec tempus et metus ut porta. Nunc elementum turpis eget varius lobortis.',
+					summary: 'Ex. presidente da OAB de Itaberaí e advogado atuando desde 1992.',
 				},
 				{
 					src: '/lawyers/lucilo_com_fundo.png',
