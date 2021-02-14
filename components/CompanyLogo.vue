@@ -1,5 +1,5 @@
 <template>
-	<img :width="width" alt="Logo do escritório" src="/logo_sem_fundo2.svg" />
+	<img :width="width" alt="Logo do escritório" src="/logos/logo_sem_fundo2.svg" />
 </template>
 
 <script>

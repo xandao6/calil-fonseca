@@ -2,7 +2,11 @@
 	<img
 		:width="width"
 		alt="Ricardo Calil & Advogados Associados"
-		:src="$vuetify.theme.dark ? '/logo_texto_sem_fundo.svg' : '/logo_texto_sem_fundo_black.svg'"
+		:src="
+			$vuetify.theme.dark
+				? '/logos/logo_texto_sem_fundo.svg'
+				: '/logos/logo_texto_sem_fundo_black.svg'
+		"
 	/>
 </template>
 

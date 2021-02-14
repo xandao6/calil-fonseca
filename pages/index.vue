@@ -1,28 +1,23 @@
 <template>
 	<div>
-		<v-row justify="center" align="center">
-			<v-col cols="12" sm="8" md="6">
-				<div class="text-center"></div>
-				<v-card elevation="10">
-					<v-card-title class="headline">
-						Ricardo Calil & Advogados Associados
-					</v-card-title>
-					<v-card-text>
-						<p>Seja bem-vindo ao nosso escritório!</p>
-					</v-card-text>
-					<v-card-actions> </v-card-actions>
-				</v-card>
-			</v-col>
-		</v-row>
+		<office-introduction> </office-introduction>
 		<lawyer-cards> </lawyer-cards>
+		<expertise-areas> </expertise-areas>
+		<!--contact> </contact-->
 	</div>
 </template>
 
 <script>
+	import OfficeIntroduction from '~/components/OfficeIntroduction.vue'
 	import LawyerCards from '~/components/LawyerCards.vue'
+	import ExpertiseAreas from '~/components/ExpertiseAreas.vue'
+	// import Contact from '~/components/Contact.vue'
 	export default {
 		components: {
+			OfficeIntroduction,
 			LawyerCards,
+			ExpertiseAreas,
+			// Contact,
 		},
 		layout: (ctx) => (ctx.isMobile ? 'mobile' : 'default'),
 		data() {

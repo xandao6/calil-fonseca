@@ -9,6 +9,9 @@ export default {
 
 	// Global page headers (https://go.nuxtjs.dev/config-head)
 	head: {
+		htmlAttrs: {
+			lang: 'pt-BR',
+		},
 		titleTemplate: '%s',
 		title: 'Ricardo Calil',
 		meta: [
