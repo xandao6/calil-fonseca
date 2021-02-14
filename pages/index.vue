@@ -19,7 +19,7 @@
 			ExpertiseAreas,
 			Contact,
 		},
-		layout: (ctx) => (ctx.isMobile ? 'mobile' : 'default'),
+		layout: 'default',
 		data() {
 			return {}
 		},
