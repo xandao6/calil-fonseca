@@ -38,8 +38,8 @@
 			/>
 			<v-spacer v-if="$vuetify.breakpoint.mdAndDown" />
 
-			<company-logo class="logo--margin" :width="50" />
-			<company-text-logo :width="200" />
+			<company-logo class="logo--margin"> </company-logo>
+			<company-text-logo> </company-text-logo>
 
 			<v-spacer />
 			<v-row v-if="$vuetify.breakpoint.lgAndUp" no-gutters>
