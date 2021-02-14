@@ -1,10 +1,6 @@
 <template>
-	<div>
-		<v-card
-			class="lawyer lawyer__card"
-			:class="{ 'lawyer__card--sm_and_up': $vuetify.breakpoint.smAndUp }"
-			elevation="10"
-		>
+	<section id="expertise-areas">
+		<v-card elevation="10">
 			<v-card-title class="headline justify-center">Áreas de Atuação</v-card-title>
 			<v-row no-gutters>
 				<v-col v-for="(area, i) in areas" :key="i" align="center" cols="3">
@@ -15,7 +11,7 @@
 				</v-col>
 			</v-row>
 		</v-card>
-	</div>
+	</section>
 </template>
 
 <script>
@@ -43,13 +39,13 @@
 					description: '',
 				},
 				{
-					src: '/expertise_areas/criminal.svg',
-					title: 'Criminal',
+					src: '/expertise_areas/familia.svg',
+					title: 'Família',
 					description: '',
 				},
 				{
-					src: '/expertise_areas/familia.svg',
-					title: 'Família',
+					src: '/expertise_areas/imobiliario.svg',
+					title: 'Imobiliário',
 					description: '',
 				},
 				{
@@ -58,8 +54,8 @@
 					description: '',
 				},
 				{
-					src: '/expertise_areas/imobiliario.svg',
-					title: 'Imobiliário',
+					src: '/expertise_areas/criminal.svg',
+					title: 'Criminal',
 					description: '',
 				},
 			],

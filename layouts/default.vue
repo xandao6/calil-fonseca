@@ -16,12 +16,16 @@
 			<v-divider></v-divider>
 
 			<v-list dense rounded>
-				<v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
+				<v-list-item
+					v-for="(section, i) in sections"
+					:key="i"
+					@click="$vuetify.goTo(section.target, scrollOptions)"
+				>
 					<v-list-item-action>
-						<v-icon>{{ item.icon }}</v-icon>
+						<v-icon>{{ section.icon }}</v-icon>
 					</v-list-item-action>
 					<v-list-item-content>
-						<v-list-item-title v-text="item.title" />
+						<v-list-item-title v-text="section.title" />
 					</v-list-item-content>
 				</v-list-item>
 			</v-list>
@@ -39,9 +43,15 @@
 
 			<v-spacer />
 			<v-row v-if="$vuetify.breakpoint.lgAndUp" no-gutters>
-				<v-col v-for="(item, i) in items" :key="i">
-					<v-btn width="180px" elevation="3" raised :to="item.to" class="secondary" exact>
-						{{ item.title }}
+				<v-col v-for="(section, i) in sections" :key="i">
+					<v-btn
+						class="secondary"
+						width="180px"
+						elevation="3"
+						raised
+						@click="$vuetify.goTo(section.target, scrollOptions)"
+					>
+						{{ section.title }}
 					</v-btn>
 				</v-col>
 			</v-row>
@@ -136,26 +146,31 @@
 			return {
 				dark: true,
 				drawer: false,
-				items: [
+				scrollOptions: {
+					duration: 400,
+					offset: 0,
+					easing: 'easeInOutCubic',
+				},
+				sections: [
 					{
 						icon: 'mdi-apps',
 						title: 'Início',
-						to: '/',
+						target: '#office-introduction',
 					},
 					{
 						icon: 'mdi-human-greeting',
 						title: 'Advogados',
-						to: '/advogados',
+						target: '#lawyer-cards',
 					},
 					{
 						icon: 'mdi-book-play-outline',
 						title: 'Atuação',
-						to: '/areas',
+						target: '#expertise-areas',
 					},
 					{
 						icon: 'mdi-card-account-phone',
 						title: 'Contato',
-						to: '/contato',
+						target: '#contact',
 					},
 				],
 				social: {

@@ -1,29 +1,31 @@
 <template>
-	<v-row justify="center" align="center" dense>
-		<v-col v-for="(lawyer, i) in lawyers" :key="i" cols="12">
-			<v-card
-				class="lawyer lawyer__card"
-				:class="{ 'lawyer__card--sm_and_up': $vuetify.breakpoint.smAndUp }"
-				elevation="10"
-			>
-				<v-card-actions>
-					<v-avatar
-						class="lawyer lawyer__img"
-						:class="{ 'lawyer__img--xs': $vuetify.breakpoint.xsOnly }"
-						size="180"
-					>
-						<v-img :src="lawyer.src" :alt="lawyer.name" />
-					</v-avatar>
-				</v-card-actions>
+	<section id="lawyer-cards">
+		<v-row justify="center" align="center" dense>
+			<v-col v-for="(lawyer, i) in lawyers" :key="i" cols="12">
+				<v-card
+					class="lawyer lawyer__card"
+					:class="{ 'lawyer__card--sm_and_up': $vuetify.breakpoint.smAndUp }"
+					elevation="10"
+				>
+					<v-card-actions>
+						<v-avatar
+							class="lawyer lawyer__img"
+							:class="{ 'lawyer__img--xs': $vuetify.breakpoint.xsOnly }"
+							size="180"
+						>
+							<v-img :src="lawyer.src" :alt="lawyer.name" />
+						</v-avatar>
+					</v-card-actions>
 
-				<div class="content">
-					<v-card-title class="headline" v-text="lawyer.name"></v-card-title>
-					<v-card-subtitle> OAB/GO Nº {{ lawyer.oab }}</v-card-subtitle>
-					<v-card-text v-text="lawyer.summary"></v-card-text>
-				</div>
-			</v-card>
-		</v-col>
-	</v-row>
+					<div class="content">
+						<v-card-title class="headline" v-text="lawyer.name"></v-card-title>
+						<v-card-subtitle> OAB/GO Nº {{ lawyer.oab }}</v-card-subtitle>
+						<v-card-text v-text="lawyer.summary"></v-card-text>
+					</div>
+				</v-card>
+			</v-col>
+		</v-row>
+	</section>
 </template>
 
 <script>

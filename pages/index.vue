@@ -3,7 +3,7 @@
 		<office-introduction> </office-introduction>
 		<lawyer-cards> </lawyer-cards>
 		<expertise-areas> </expertise-areas>
-		<!--contact> </contact-->
+		<contact> </contact>
 	</div>
 </template>
 
@@ -11,13 +11,13 @@
 	import OfficeIntroduction from '~/components/OfficeIntroduction.vue'
 	import LawyerCards from '~/components/LawyerCards.vue'
 	import ExpertiseAreas from '~/components/ExpertiseAreas.vue'
-	// import Contact from '~/components/Contact.vue'
+	import Contact from '~/components/Contact.vue'
 	export default {
 		components: {
 			OfficeIntroduction,
 			LawyerCards,
 			ExpertiseAreas,
-			// Contact,
+			Contact,
 		},
 		layout: (ctx) => (ctx.isMobile ? 'mobile' : 'default'),
 		data() {
