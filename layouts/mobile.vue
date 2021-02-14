@@ -86,15 +86,6 @@
 			>
 				<v-icon>mdi-instagram</v-icon>
 			</v-btn>
-			<v-btn
-				:href="'mailto:' + social.email"
-				rel="noopener noreferrer"
-				class="mx-2 secondary white--text"
-				elevation="3"
-				icon
-			>
-				<v-icon>mdi-email</v-icon>
-			</v-btn>
 		</v-footer>
 
 		<v-fab-transition>
@@ -154,7 +145,6 @@
 					facebook: 'ricardocaliladv',
 					instagram: 'dr.ricardocalil',
 					phone: '+55 62 3375-2216',
-					email: 'ricardocalil@hotmail.com',
 				},
 			}
 		},
