@@ -51,8 +51,6 @@ export default {
 		'@nuxt/typescript-build',
 		// https://go.nuxtjs.dev/vuetify
 		'@nuxtjs/vuetify',
-		// https://google-analytics.nuxtjs.org/
-		'@nuxtjs/google-analytics',
 	],
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
@@ -95,12 +93,6 @@ export default {
 				},
 			},
 		},
-	},
-
-	googleAnalytics: {
-		id: 'G-P73JRJTJT2',
-		checkDuplicatedScript: true,
-		dev: false, // Disable GA
 	},
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
