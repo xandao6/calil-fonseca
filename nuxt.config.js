@@ -63,6 +63,10 @@ export default {
 		'@nuxt/content',
 		// https://github.com/nuxt-community/gtm-module
 		'@nuxtjs/gtm',
+		// https://sitemap.nuxtjs.org/
+		'@nuxtjs/sitemap',
+		// https://github.com/nuxt-community/robots-module
+		'@nuxtjs/robots',
 	],
 
 	// Axios module configuration (https://go.nuxtjs.dev/config-axios)
