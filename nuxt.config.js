@@ -105,7 +105,6 @@ export default {
 		enabled: true,
 		id: 'GTM-P7H2764',
 		pageTracking: true,
-		scriptURL: 'https://www.googletagmanager.com/gtag/js',
 	},
 
 	sitemap: {
