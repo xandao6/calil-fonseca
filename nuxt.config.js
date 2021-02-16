@@ -108,6 +108,12 @@ export default {
 		scriptURL: 'https://www.googletagmanager.com/gtag/js',
 	},
 
+	sitemap: {
+		hostname: 'https://ricardocalil.adv.br',
+		gzip: true,
+		exclude: ['/secret', '/admin/**'],
+	},
+
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
 	build: {},
 }
