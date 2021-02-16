@@ -98,7 +98,9 @@ export default {
 	},
 
 	gtm: {
+		enabled: true,
 		id: 'GTM-P7H2764',
+		pageTracking: true,
 	},
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
