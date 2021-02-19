@@ -117,6 +117,10 @@ export default {
 
 	optimizedImages: {
 		optimizeImages: true,
+		webp: {
+			preset: 'default',
+			quality: 70,
+		},
 	},
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
