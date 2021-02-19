@@ -51,6 +51,8 @@ export default {
 		'@nuxt/typescript-build',
 		// https://go.nuxtjs.dev/vuetify
 		'@nuxtjs/vuetify',
+		// https://marquez.co/docs/nuxt-optimized-images/
+		'@aceforth/nuxt-optimized-images',
 	],
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
@@ -110,7 +112,12 @@ export default {
 	sitemap: {
 		hostname: 'https://ricardocalil.adv.br',
 		gzip: true,
-		exclude: ['/secret', '/admin/**'],
+		exclude: ['/admin/**'],
+	},
+
+	optimizedImages: {
+		optimizeImages: true,
+		optimizeImagesInDev: true,
 	},
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)

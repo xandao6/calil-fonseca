@@ -13,7 +13,11 @@
 							:class="{ 'lawyer__img--xs': $vuetify.breakpoint.xsOnly }"
 							size="180"
 						>
-							<v-img :src="lawyer.src" :alt="lawyer.name" />
+							<v-img
+								:src="lawyer.src"
+								:lazy-src="lawyer.lazyUrl"
+								:alt="lawyer.name"
+							/>
 						</v-avatar>
 					</v-card-actions>
 
@@ -33,17 +37,19 @@
 		data: () => ({
 			lawyers: [
 				{
-					src: '/lawyers/ricardo_com_fundo.png',
+					src: '/lawyers/ricardo_com_fundo.png?webp',
+					lazyUrl: '/lawyers/ricardo_com_fundo.png?lqip',
 					name: 'Dr. Ricardo Calil',
 					oab: '12.120',
 					summary: 'Ex. presidente da OAB de Itaberaí e advogado atuando desde 1992.',
 				},
 				{
-					src: '/lawyers/lucilo_com_fundo.png',
+					src: '/lawyers/lucilo_com_fundo.png?webp',
+					lazyUrl: '/lawyers/lucilo_com_fundo.png?lqip',
 					name: 'Dr. Lucilo Neto',
 					oab: '47.557',
 					summary:
-						'Advogado apaixonado pelo que faz. Formado na Puc/GO em 2015, exerce a profissão desde então, sendo pós-graduado em prática trabalhista e previdenciária, também possui bastante experiência na área cível e criminal.',
+						'Advogado formado na Puc/GO em 2015, pós-graduado em prática trabalhista e previdenciária.',
 				},
 			],
 		}),
