@@ -57,25 +57,9 @@ export default {
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
 	modules: [
-		// https://go.nuxtjs.dev/axios
-		'@nuxtjs/axios',
-		// https://go.nuxtjs.dev/pwa
-		'@nuxtjs/pwa',
-		// https://go.nuxtjs.dev/content
-		'@nuxt/content',
 		// https://github.com/nuxt-community/gtm-module
 		'@nuxtjs/gtm',
-		// https://sitemap.nuxtjs.org/
-		'@nuxtjs/sitemap',
-		// https://github.com/nuxt-community/robots-module
-		'@nuxtjs/robots',
 	],
-
-	// Axios module configuration (https://go.nuxtjs.dev/config-axios)
-	axios: {},
-
-	// Content module configuration (https://go.nuxtjs.dev/config-content)
-	content: {},
 
 	// Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
 	vuetify: {
@@ -107,12 +91,6 @@ export default {
 		enabled: true,
 		id: 'GTM-P7H2764',
 		pageTracking: true,
-	},
-
-	sitemap: {
-		hostname: 'https://ricardocalil.adv.br',
-		gzip: true,
-		exclude: ['/admin/**'],
 	},
 
 	optimizedImages: {
