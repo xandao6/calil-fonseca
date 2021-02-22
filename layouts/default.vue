@@ -32,10 +32,9 @@
 		</v-navigation-drawer>
 
 		<v-app-bar fixed app elevate-on-scroll>
-			<v-app-bar-nav-icon
-				v-if="$vuetify.breakpoint.mdAndDown"
-				@click.stop="drawer = !drawer"
-			/>
+			<v-app-bar-nav-icon v-if="$vuetify.breakpoint.mdAndDown" @click.stop="drawer = !drawer">
+				<v-icon>{{ icons.mdiMenu }}</v-icon>
+			</v-app-bar-nav-icon>
 			<v-spacer v-if="$vuetify.breakpoint.mdAndDown" />
 
 			<company-logo class="logo--margin"> </company-logo>
@@ -58,7 +57,7 @@
 			<v-spacer v-if="$vuetify.breakpoint.lgAndUp" />
 
 			<v-btn icon @click.stop="toggleTheme">
-				<v-icon>mdi-theme-light-dark</v-icon>
+				<v-icon>{{ icons.mdiThemeLightDark }}</v-icon>
 			</v-btn>
 		</v-app-bar>
 
@@ -78,7 +77,7 @@
 				elevation="3"
 				icon
 			>
-				<v-icon>mdi-phone</v-icon>
+				<v-icon>{{ icons.mdiPhone }}</v-icon>
 			</v-btn>
 			<v-btn
 				:href="
@@ -92,7 +91,7 @@
 				elevation="3"
 				icon
 			>
-				<v-icon>mdi-whatsapp</v-icon>
+				<v-icon>{{ icons.mdiWhatsapp }}</v-icon>
 			</v-btn>
 			<v-btn
 				:href="'https://www.facebook.com/' + social.facebook"
@@ -102,7 +101,7 @@
 				elevation="3"
 				icon
 			>
-				<v-icon>mdi-facebook</v-icon>
+				<v-icon>{{ icons.mdiFacebook }}</v-icon>
 			</v-btn>
 			<v-btn
 				:href="'https://instagram.com/' + social.instagram"
@@ -112,7 +111,7 @@
 				elevation="3"
 				icon
 			>
-				<v-icon>mdi-instagram</v-icon>
+				<v-icon>{{ icons.mdiInstagram }}</v-icon>
 			</v-btn>
 		</v-footer>
 
@@ -128,13 +127,25 @@
 				fab
 				class="v-btn--absolute"
 			>
-				<v-icon x-large color="green">mdi-whatsapp</v-icon>
+				<v-icon x-large color="green">{{ icons.mdiWhatsapp }}</v-icon>
 			</v-btn>
 		</v-fab-transition>
 	</v-app>
 </template>
 
 <script>
+	import {
+		mdiMenu,
+		mdiThemeLightDark,
+		mdiPhone,
+		mdiWhatsapp,
+		mdiFacebook,
+		mdiInstagram,
+		mdiApps,
+		mdiHumanGreeting,
+		mdiBookPlayOutline,
+		mdiCardAccountPhone,
+	} from '@mdi/js'
 	import CompanyLogo from '~/components/CompanyLogo.vue'
 	import CompanyTextLogo from '~/components/CompanyTextLogo.vue'
 	export default {
@@ -153,22 +164,22 @@
 				},
 				sections: [
 					{
-						icon: 'mdi-apps',
+						icon: mdiApps,
 						title: 'Início',
 						target: '#office-introduction',
 					},
 					{
-						icon: 'mdi-human-greeting',
+						icon: mdiHumanGreeting,
 						title: 'Advogados',
 						target: '#lawyer-cards',
 					},
 					{
-						icon: 'mdi-book-play-outline',
+						icon: mdiBookPlayOutline,
 						title: 'Atuação',
 						target: '#expertise-areas',
 					},
 					{
-						icon: 'mdi-card-account-phone',
+						icon: mdiCardAccountPhone,
 						title: 'Contato',
 						target: '#contact',
 					},
@@ -178,6 +189,14 @@
 					facebook: 'ricardocaliladv',
 					instagram: 'dr.ricardocalil',
 					phone: '+55 62 3375-2216',
+				},
+				icons: {
+					mdiMenu,
+					mdiThemeLightDark,
+					mdiPhone,
+					mdiWhatsapp,
+					mdiFacebook,
+					mdiInstagram,
 				},
 			}
 		},

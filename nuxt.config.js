@@ -85,6 +85,7 @@ export default {
 				},
 			},
 		},
+		defaultAssets: false,
 	},
 
 	gtm: {
@@ -103,6 +104,6 @@ export default {
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
 	build: {
-		extractCSS: true,
+		extractCSS: process.env.NODE_ENV !== 'development',
 	},
 }
