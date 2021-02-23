@@ -43,7 +43,7 @@
 		"lqip-loader": "^2.2.1",
 		"prettier": "^2.1.2",
 		"responsive-loader": "^2.3.0",
-		"sharp": "^0.27.1",
+		"sharp": "^0.27.2",
 		"sqip-loader": "^1.0.0",
 		"ts-jest": "^26.4.3",
 		"vue-jest": "^3.0.4",
