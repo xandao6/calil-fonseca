@@ -15,7 +15,7 @@
 		"@nuxt/typescript-runtime": "^2.0.0",
 		"@nuxtjs/gtm": "^2.4.0",
 		"core-js": "^3.6.5",
-		"nuxt": "^2.15.0"
+		"nuxt": "^2.15.2"
 	},
 	"devDependencies": {
 		"@aceforth/nuxt-optimized-images": "^1.4.0",
