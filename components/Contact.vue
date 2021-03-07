@@ -5,8 +5,8 @@
 				<v-card-title class="headline justify-center text-center break-word"
 					>Contato</v-card-title
 				>
-				<div class="text-center">
-					<div class="text-left">
+				<div class="ma-3">
+					<div class="ma-1 text-left">
 						<v-icon>{{ icons.mdiPhone }}</v-icon>
 						<span>Telefone:</span>
 						<a
@@ -15,7 +15,7 @@
 							v-text="social.phone"
 						></a>
 					</div>
-					<div>
+					<div class="ma-1 text-left">
 						<v-icon>{{ icons.mdiWhatsapp }}</v-icon>
 						<span>Whatsapp:</span>
 						<a
@@ -29,7 +29,7 @@
 							v-text="social.whatsapp"
 						></a>
 					</div>
-					<div>
+					<div class="ma-1 text-left">
 						<v-icon>{{ icons.mdiFacebook }}</v-icon>
 						<span>Facebook:</span>
 						<a
@@ -39,7 +39,7 @@
 							v-text="social.facebook"
 						></a>
 					</div>
-					<div>
+					<div class="ma-1 text-left">
 						<v-icon>{{ icons.mdiInstagram }}</v-icon>
 						<span>Instagram:</span>
 						<a
@@ -49,11 +49,11 @@
 							v-text="social.instagram"
 						></a>
 					</div>
-					<div>
+					<div class="ma-1 text-left">
 						<v-icon>{{ icons.mdiMapMarker }}</v-icon>
-						<span>Endereço: {{ street }}]</span>
+						<span>Endereço: {{ street }}</span>
 					</div>
-					<div>
+					<div class="ma-1 text-left">
 						<v-icon>{{ icons.mdiMap }}</v-icon>
 						<span>Mapa:</span>
 						<v-flex class="text-center">
