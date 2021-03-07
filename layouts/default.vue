@@ -70,7 +70,7 @@
 		<v-footer absolute app>
 			<span>&copy; {{ new Date().getFullYear() }}</span>
 			<v-spacer />
-			<v-btn
+			<!--v-btn
 				:href="'tel:' + social.phone"
 				rel="noopener noreferrer"
 				class="mx-2 secondary white--text"
@@ -112,7 +112,7 @@
 				icon
 			>
 				<v-icon>{{ icons.mdiInstagram }}</v-icon>
-			</v-btn>
+			</v-btn-->
 		</v-footer>
 
 		<v-fab-transition>
@@ -227,8 +227,8 @@
 		&--absolute {
 			position: fixed;
 			bottom: 0px;
-			left: 0px;
-			margin: 0px 0px 24px 24px;
+			right: 0px;
+			margin: 0px 12px 12px 0px;
 			z-index: 1000;
 		}
 	}

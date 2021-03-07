@@ -1,10 +1,10 @@
 <template>
-	<div>
+	<v-container class="px-0">
 		<office-introduction> </office-introduction>
 		<lawyer-cards> </lawyer-cards>
 		<expertise-areas> </expertise-areas>
 		<contact> </contact>
-	</div>
+	</v-container>
 </template>
 
 <script>

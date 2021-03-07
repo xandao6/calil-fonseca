@@ -1,31 +1,35 @@
 <template>
-	<section id="expertise-areas">
-		<v-card elevation="10">
-			<v-card-title class="headline justify-center">Áreas de Atuação</v-card-title>
-			<v-row no-gutters>
-				<v-col v-for="(area, i) in areas" :key="i" align="center" cols="3">
-					<v-img
-						class="ma-3"
-						:width="areaWidth"
-						:height="areaHeight"
-						:src="area.src"
-						:lazy-src="area.lazyUrl"
-						:alt="area.name"
-					>
-						<template v-slot:placeholder>
-							<v-row class="fill-height ma-0" align="center" justify="center">
-								<v-progress-circular
-									indeterminate
-									color="grey lighten-5"
-								></v-progress-circular>
-							</v-row>
-						</template>
-					</v-img>
-					<v-card-text class="headline" v-text="area.title"></v-card-text>
-				</v-col>
-			</v-row>
-		</v-card>
-	</section>
+	<v-row justify="center" align="center">
+		<v-col cols="12" sm="10" md="9" lg="8" xl="7">
+			<v-card elevation="10">
+				<v-card-title class="headline break-word justify-center"
+					>Áreas de Atuação</v-card-title
+				>
+				<v-row no-gutters>
+					<v-col v-for="(area, i) in areas" :key="i" align="center" cols="6" sm="3">
+						<v-img
+							class="ma-3"
+							:width="areaWidth"
+							:height="areaHeight"
+							:src="area.src"
+							:lazy-src="area.lazyUrl"
+							:alt="area.name"
+						>
+							<template v-slot:placeholder>
+								<v-row class="fill-height ma-0" align="center" justify="center">
+									<v-progress-circular
+										indeterminate
+										color="grey lighten-5"
+									></v-progress-circular>
+								</v-row>
+							</template>
+						</v-img>
+						<v-card-text v-text="area.title"></v-card-text>
+					</v-col>
+				</v-row>
+			</v-card>
+		</v-col>
+	</v-row>
 </template>
 
 <script>
