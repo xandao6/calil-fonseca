@@ -51,8 +51,6 @@ export default {
 		'@nuxt/typescript-build',
 		// https://go.nuxtjs.dev/vuetify
 		'@nuxtjs/vuetify',
-		// https://marquez.co/docs/nuxt-optimized-images/
-		'@aceforth/nuxt-optimized-images',
 	],
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
@@ -93,14 +91,6 @@ export default {
 		enabled: true,
 		id: 'GTM-P7H2764',
 		pageTracking: true,
-	},
-
-	optimizedImages: {
-		optimizeImages: true,
-		webp: {
-			preset: 'default',
-			quality: 70,
-		},
 	},
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)

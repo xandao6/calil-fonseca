@@ -5,8 +5,8 @@
 				<v-card-title class="headline justify-center text-center break-word"
 					>Contato</v-card-title
 				>
-				<v-flex class="text-center">
-					<div>
+				<div class="text-center">
+					<div class="text-left">
 						<v-icon>{{ icons.mdiPhone }}</v-icon>
 						<span>Telefone:</span>
 						<a
@@ -67,7 +67,7 @@
 							></iframe>
 						</v-flex>
 					</div>
-				</v-flex>
+				</div>
 			</v-card>
 		</v-col>
 	</v-row>

@@ -3,8 +3,8 @@
 		:width="getSize"
 		:height="getSize"
 		alt="Logo do escritório"
-		src="/logos/logo_sem_fundo2.svg?webp"
-		lazy-src="/logos/logo_sem_fundo2.svg?lqip"
+		src="/logos/logo_sem_fundo2.svg"
+		lazy-src="/logos/logo_sem_fundo2_lqip.webp"
 		aspect-ratio="1"
 		class="no-flex"
 		contain

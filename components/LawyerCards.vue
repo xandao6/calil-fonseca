@@ -40,16 +40,16 @@
 		data: () => ({
 			lawyers: [
 				{
-					src: '/lawyers/ricardo_com_fundo.png?webp',
-					lazyUrl: '/lawyers/ricardo_com_fundo.png?lqip',
+					src: '/lawyers/ricardo.webp',
+					lazyUrl: '/lawyers/ricardo_lqip.webp',
 					name: 'Dr. Ricardo Calil',
 					oab: '12.120',
 					summary:
 						'Advogado atuante desde 1992, articulista e com diversos artigos publicados em jornais e revistas especializadas em direito. Também é ex-presidente da OAB de Itaberaí, presidente atual da Academia Itaberina de Letras e Artes (AILA) e sócio-fundador da Confraria Internacional de Literatura e Artes (CILA).',
 				},
 				{
-					src: '/lawyers/lucilo_com_fundo.png?webp',
-					lazyUrl: '/lawyers/lucilo_com_fundo.png?lqip',
+					src: '/lawyers/lucilo.webp',
+					lazyUrl: '/lawyers/lucilo_lqip.webp',
 					name: 'Dr. Lucilo Neto',
 					oab: '47.557',
 					summary:

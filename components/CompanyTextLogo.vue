@@ -4,13 +4,13 @@
 		:height="getHeight"
 		:src="
 			$vuetify.theme.dark
-				? '/logos/logo_texto_sem_fundo.svg?webp'
-				: '/logos/logo_texto_sem_fundo_black.svg?webp'
+				? '/logos/logo_texto_sem_fundo.svg'
+				: '/logos/logo_texto_sem_fundo_black.svg'
 		"
 		:lazy-src="
 			$vuetify.theme.dark
-				? '/logos/logo_texto_sem_fundo.svg?lqip'
-				: '/logos/logo_texto_sem_fundo_black.svg?lqip'
+				? '/logos/logo_texto_sem_fundo_lqip.webp'
+				: '/logos/logo_texto_sem_fundo_black_lqip.webp'
 		"
 		alt="Ricardo Calil & Advogados Associados"
 		class="my-2 no-flex"
