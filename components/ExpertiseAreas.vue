@@ -4,18 +4,23 @@
 			<v-card-title class="headline justify-center">Áreas de Atuação</v-card-title>
 			<v-row no-gutters>
 				<v-col v-for="(area, i) in areas" :key="i" align="center" cols="3">
-					<v-avatar class="ma-3" size="125" tile>
-						<v-img :src="area.src" :lazy-src="area.lazyUrl" :alt="area.name">
-							<template v-slot:placeholder>
-								<v-row class="fill-height ma-0" align="center" justify="center">
-									<v-progress-circular
-										indeterminate
-										color="grey lighten-5"
-									></v-progress-circular>
-								</v-row>
-							</template>
-						</v-img>
-					</v-avatar>
+					<v-img
+						class="ma-3"
+						:width="areaWidth"
+						:height="areaHeight"
+						:src="area.src"
+						:lazy-src="area.lazyUrl"
+						:alt="area.name"
+					>
+						<template v-slot:placeholder>
+							<v-row class="fill-height ma-0" align="center" justify="center">
+								<v-progress-circular
+									indeterminate
+									color="grey lighten-5"
+								></v-progress-circular>
+							</v-row>
+						</template>
+					</v-img>
 					<v-card-text class="headline" v-text="area.title"></v-card-text>
 				</v-col>
 			</v-row>
@@ -77,6 +82,14 @@
 				},
 			],
 		}),
+		computed: {
+			areaWidth() {
+				return 50
+			},
+			areaHeight() {
+				return 50
+			},
+		},
 	}
 </script>
 
